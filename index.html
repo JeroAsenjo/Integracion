@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--link a css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--link a css-->
     <link rel="stylesheet" href="./styles/globals.css">
 
     <title>Programacion Web</title>
@@ -21,10 +22,9 @@
 
 <body>
     <header> <!-- Etiqueta semantica de encabezado -->
-        <img src="./image/logo.webp" alt="Logo Github" class="imagelogoheader">
-        <p>Mendoza</p>
+        <img src="./image/logo.jpg" alt="Logo hamburguesa" class="imagelogoheader animate__animated animate__bounce">
         <nav> <!-- Etiqueta semantica barra de navegación -->
-            <ul> <!-- Etiqueta lógica lista desordenada -->
+            <ul class="navbar"> <!-- Etiqueta lógica lista desordenada -->
                 <li> <!-- Etiqueta lógica item de la lista -->
                     <a target="_blank" href="#">Inicio</a>
                 </li>
@@ -39,34 +39,57 @@
                 </li>
             </ul>
         </nav>
-        <div> <!-- Etiqueta contenedora general -->
-            <button>LogIn</button>
-            <button>SingIn</button>
-        </div>
+        <nav> <!-- Etiqueta contenedora general -->
+
+            <a target="_blank" href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i> </a>
+            <a target="_blank" href="https://www.google.com.ar/maps/@-32.9362686,-68.8375374,14z?entry=ttu"> <i
+                    class="fa-solid fa-map-location-dot"></i> </a>
+            <i class="fa-solid fa-bars menu"> </i>
+        </nav>
     </header>
     <main>
-        <div class="banner"> 
+        <div class="banner">
             <div class="bannerInfo">
-            <h1> Jero </h1>
-            <h2> Proyecto realizado en el taller de programacion </h2>
+                <h1> Jero </h1>
+                <h2> Proyecto realizado en el taller de programacion </h2>
             </div>
         </div>
         <section class="listadoCartas">
-            <article class="carta">
-                <img src="./image/burger1.jpg" alt="imagen de la mejor pagina de vacas del mundo">
+            <article class="carta animate__backInUp animate__animated">
+                <img src="./image/burger1.jpg" alt="imagen de la primera hamburguesa">
                 <div>
-                <h2>Hamburguesa</h2>
-                <p>creador: jero</p>
-                <button>Visita la página</button>
-            </div>
+                    <div>
+                    <h2>MAS S-MASH</h2>
+                    <p>Dos carnes smash, bacon, queso americano y cebolla a la plancha</p>
+                    </div>
+                    <button>Visita la página</button>
+                </div>
             </article>
-            <article class="carta">
-                <img src="./image/pagina.avif" alt="imagen de la mejor pagina de futbol del mundo">
-                <h2>Hamburguesa 2</h2>
-                <p>Creador: Francisco</p>
-                <button>Visita la página</button>
+            <article class="carta animate__backInUp animate__animated">
+                <img src="./image/burger2.png" alt="imagen de la segunda hamburguesa">
+                <div>
+                    <div>
+                    <h2>BB-QUEEN</h2>
+                    <p>Smash Burger con dos carnes al estilo smash, queso americano, champiñones a la plancha, bacon y
+                        salsa Barbacoa.</p>
+                    </div>
+                    <button>Visita la página</button>
+                </div>
+            </article>
+            <article class="carta animate__backInUp animate__animated">
+                <img src="./image/burger3.jpg" alt="imagen de la tercera hamburguesa">
+                <div>
+                    <div>
+                        <h2>SERRANA</h2>
+                        <p>Carne picada en la plancha con pedacitos de jamón serrano crujiente, queso manchego y americano,
+                            patatas paja y huevo frito, acompañada de salsa Brava.</p>
+                    </div>
+                    <button>Visita la página</button>
+                </div>
             </article>
         </section>
+
+        <a href="#top"><i class="fa-solid fa-arrow-up arrow-top"></i></a>
     </main>
     <footer>
         <nav>

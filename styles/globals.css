@@ -6,8 +6,18 @@
     padding: 0%;
     box-sizing: border-box;
 }
+
+:root{
+    --color-primario: rgb(223, 158, 80);
+    --color-secundary: #172601;
+}
+
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color: antiquewhite;
+
+    background-color: var(--color-primario);
     font-family: 'Montserrat', sans-serif;;
 }
 a{
@@ -16,4 +26,13 @@ a{
 }
 ul{
     list-style: none;
+}
+
+.arrow-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #A64F03;
+    padding: 10px;
+    border-radius: 50%;
 }
